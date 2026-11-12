@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .one {
+      display: flex;
+      /* position: relative; */
+    }
+
+    .banner {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 10vw;
+      background: cornflowerblue;
+      overflow-x: hidden;
+    }
+
+    .about {
+      height: 100vh;
+      width: calc(100vw - 10vw);
+      background: grey;
+    }
+
+    .page {
+      height: 100vh;
+      width: 100vw;
+      background: blueviolet;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <section class="one">
+    <header> <div class="banner"></div></header>
+    <main>
+      <div class="about"></div>
+      <div class="page"></div>
+    </main>
+  </section>
+  
+
+  
+</body>
+</html>
