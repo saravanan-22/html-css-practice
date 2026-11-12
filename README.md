@@ -11,4 +11,4 @@ Assignments and exercises from learning HTML5, CSS3 and Bootstrap — semantic m
 
 Open any folder's `index.html` in a browser to view it.
 
-> For real projects, see my [portfolio](https://github.com/saravanan-22/react-portfolio) and [web-clones](https://github.com/saravanan-22/web-clones).
+> For real projects, see my [portfolio](https://github.com/saravanan-22/react-portfolio) and [WhatsApp landing page clone](https://github.com/saravanan-22/whatsapp-landing-page-clone).
