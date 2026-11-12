@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        div p ~ h1 {
+            color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    
+    <table border="1" width="60%">
+        <tr>
+            <th>S.No</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Rice</td>
+            <td>5</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Wheat</td>
+            <td>2</td>
+            <td rowspan="4">100</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Sunflower Oil</td>
+            <td>1</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>Sugar</td>
+            <td colspan="4">5 / 250</td>
+            <!-- <td>250</td> -->
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+          <th rowspan="2">Header 1</th>
+          <th>Header 2</th>
+        </tr>
+        <tr>
+          <td>Data 1</td>
+        </tr>
+        <tr>
+          <td>Data 2</td>
+          <td>Data 3</td>
+        </tr>
+      </table>
+
+
+      <table border="1" width="50%" cellspacing="45px">
+        <tr>
+            <th>S.No</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Rice</td>
+            <td>5</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Wheat</td>
+            <td>2</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Sunflower Oil</td>
+            <td>1</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>Sugar</td>
+            <td>5</td>
+            <td>250</td>
+        </tr>
+    </table>
+
+
+
+    <form action="result.html" method="post">
+        <fieldset>
+            <legend>User Inputs</legend>
+            <table>
+                <tr>
+                    <td><label for="firstName">Enter First Name:</label></td>
+                    <td><input type="text" name="firstName" id="firstName" placeholder="Enter your firstname"
+                            autocomplete="off" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastName">Enter Last Name:</label></td>
+                    <td><input type="text" name="lastName" id="lastName" placeholder="Enter your lastname"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Enter Password:</label></td>
+                    <td><input type="password" name="password" id="password" placeholder="Enter password"></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm-password">Confirm Password:</label></td>
+                    <td><input type="password" name="confirm-password" id="confirm-password"
+                            placeholder="Confirm password">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Enter Email:</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Enter email"></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile-number">Enter Mobile number:</label></td>
+                    <td><input type="number" name="mobile-number" id="mobile-number" placeholder="Enter mobile number">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Enter DOB:</label></td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Enter Address:</label></td>
+                    <td><textarea name="address" id="address" cols="30" rows="5"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Options</legend>
+            <table>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="gender-male"> <span>Male</span>
+                        <input type="radio" name="gender" id="gender-female"> <span>Female</span>
+                        <input type="radio" name="gender" id="gender-other"> <span>Other</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="hobbies">Hobbies:</label></td>
+                    <td>
+                        <input type="checkbox" name="newspaper" id="newspaper"><span>Newspaper</span>
+                        <input type="checkbox" name="cricket" id="cricket"> <span>Cricket</span>
+                        <input type="checkbox" name="football" id="football"> <span>Football</span>
+                        <input type="checkbox" name="other" id="other"> <span>Others</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="subjects">Select Subjects:</label></td>
+                    <td><select name="subjects" id="subjects">
+                            <option value="English">English</option>
+                            <option value="Maths">Maths</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="Computer">Computer</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="multi-subjects">Select Subjects:</label></td>
+                    <td><select name="multi-subjects" id="multi-subjects" multiple>
+                            <option value="English">English</option>
+                            <option value="Maths">Maths</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="Computer">Computer</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="file">Upload Marksheet:</label></td>
+                    <td><input type="file" name="file" id="file"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Buttons</legend>
+            <table>
+                <tr>
+                    <td><input type="submit" value="Register"></td>
+                    <td><input type="reset" value="Clear"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+
+
+    <iframe src="./nav.html" frameborder="1" width="400px" height="600px"></iframe>
+    <iframe src="" frameborder="1" width="400px" height="600px" name="content-frame"></iframe>
+    <iframe src="https://www.youtube.com/embed/K20tmRwP_8c" frameborder="1" width="400px" height="600px"></iframe>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1619088154466!2d77.0229237140259!3d11.02647635754541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85782c0000001%3A0xdeb59e749940cbff!2sSkill%20Safari!5e0!3m2!1sen!2sin!4v1676964586257!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias mollitia, explicabo, aliquid non fugiat odio corporis deleniti temporibus similique recusandae, facilis quibusdam iste ipsam neque dolor commodi minima est repudiandae quam perferendis quas error? Provident, fugiat. Nemo odio, recusandae ipsam culpa cum sequi voluptatem assumenda commodi. Reiciendis libero vitae recusandae quis, pariatur ducimus suscipit repellendus asperiores debitis deleniti atque labore omnis necessitatibus vel eaque dicta, nobis eum alias. Aliquid ipsa a nemo totam esse quidem? Facere, laboriosam! Vel, inventore ad. Sapiente ipsum repellat laboriosam deserunt, ea voluptatem officia libero omnis consequuntur reiciendis expedita obcaecati? Excepturi accusantium ipsa quasi ad enim.</p>
+            <h1>hi</h1>
+        </div>
+        <div>
+            <h3>jndslafhshn</h3>
+            <h1>hi</h1>
+        </div>
+</body>
+</html>
